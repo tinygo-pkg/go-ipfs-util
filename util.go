@@ -34,7 +34,6 @@ var ErrSearchIncomplete = errors.New("error: search incomplete")
 
 // ErrCast is returned when a cast fails AND the program should not panic.
 func ErrCast() error {
-	debug.PrintStack()
 	return errCast
 }
 
